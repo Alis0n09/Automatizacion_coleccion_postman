@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"8d82206c-c834-41b0-8f25-b901b3855686",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>clientes</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-14 11:54:43 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>POST - Crear cliente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:33]"><span>[2:33]</span> <span>GET - Listar clientes</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:39]"><span>[3:39]</span> <span>GET by id - Obtener cliente por id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:45]"><span>[4:45]</span> <span>PUT - Actualizar cliente por id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:71]"><span>[5:71]</span> <span>DELETE - Eliminar cliente por id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">clientes.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">CRUD Cliente</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">POST - Crear cliente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1058</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">116</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def clienteId = &#39;54bb3adc-220c-4c09-8ad7-07dc20fecd0d&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/cliente&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">68</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.9">{
+  &quot;nombres&quot;: &quot;Camila&quot;,
+  &quot;apellidos&quot;: &quot;Paredes Molina&quot;,
+  &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+  &quot;numero_identificacion&quot;: &quot;1721345678&quot;,
+  &quot;correo&quot;: &quot;camila.paredes@email.com&quot;,
+  &quot;telefono&quot;: &quot;022556677&quot;,
+  &quot;celular&quot;: &quot;0998877665&quot;,
+  &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+  &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+  &quot;numero_casa&quot;: &quot;120A&quot;,
+  &quot;nacionalidad&quot;: &quot;Ecuatoriana&quot;,
+  &quot;genero&quot;: &quot;M&quot;,
+  &quot;estado_civil&quot;: &quot;Soltero&quot;,
+  &quot;fecha_nacimiento&quot;: &quot;1998-05-14&quot;,
+  &quot;origen&quot;: &quot;Redes Sociales&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">729</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">23:54:42.578 request:
+1 &gt; POST http://localhost:3000/cliente
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 415
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nombres&quot;:&quot;Camila&quot;,&quot;apellidos&quot;:&quot;Paredes Molina&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1721345678&quot;,&quot;correo&quot;:&quot;camila.paredes@email.com&quot;,&quot;telefono&quot;:&quot;022556677&quot;,&quot;celular&quot;:&quot;0998877665&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;120A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1998-05-14&quot;,&quot;origen&quot;:&quot;Redes Sociales&quot;}
+
+23:54:42.718 response time in milliseconds: 133
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 66
+1 &lt; ETag: W/&quot;42-y8u2eSeZEpRBszGuQdrR/HkLvHY&quot;
+1 &lt; Date: Thu, 15 Jan 2026 04:54:42 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Cliente creado con éxito&quot;,&quot;data&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">110</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">23:54:42.828 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Cliente creado con éxito&quot;,
+  &quot;data&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:33]</span>
+                <span class="scenario-name">GET - Listar clientes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>101</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def clienteId = &#39;54bb3adc-220c-4c09-8ad7-07dc20fecd0d&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/cliente&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">91</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">23:54:42.871 request:
+1 &gt; GET http://localhost:3000/cliente
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:54:42.955 response time in milliseconds: 83
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2392
+1 &lt; ETag: W/&quot;958-SJgZITs3cFlMHPOSK8UHRf3Ww5I&quot;
+1 &lt; Date: Thu, 15 Jan 2026 04:54:42 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Clientes obtenidos con éxito&quot;,&quot;data&quot;:{&quot;items&quot;:[{&quot;id_cliente&quot;:&quot;27ba9f5a-664b-4152-8b75-d77396ccbe2b&quot;,&quot;nombres&quot;:&quot;Andrés Felipe&quot;,&quot;apellidos&quot;:&quot;Gómez Torres&quot;,&quot;tipo_identificacion&quot;:&quot;PASAPORTE&quot;,&quot;numero_identificacion&quot;:&quot;AB1234567&quot;,&quot;correo&quot;:&quot;andres.gomez@mail.com&quot;,&quot;telefono&quot;:&quot;023445566&quot;,&quot;celular&quot;:&quot;0981122334&quot;,&quot;calle_principal&quot;:&quot;Av. República&quot;,&quot;calle_secundaria&quot;:&quot;Diego de Almagro&quot;,&quot;numero_casa&quot;:&quot;45B&quot;,&quot;nacionalidad&quot;:&quot;Colombiana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-15T04:54:12.090Z&quot;,&quot;origen&quot;:&quot;Referencia de un amigo&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-14&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},{&quot;id_cliente&quot;:&quot;08d6e04b-1449-4b78-8a1a-5b2c72a71fc0&quot;,&quot;nombres&quot;:&quot;Camila&quot;,&quot;apellidos&quot;:&quot;Paredes Molina&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1721345678&quot;,&quot;correo&quot;:&quot;camila.paredes@email.com&quot;,&quot;telefono&quot;:&quot;022556677&quot;,&quot;celular&quot;:&quot;0998877665&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;120A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1998-05-14&quot;,&quot;fecha_registro&quot;:&quot;2026-01-14T23:51:32.347Z&quot;,&quot;origen&quot;:&quot;Redes Sociales&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-14&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},{&quot;id_cliente&quot;:&quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,&quot;nombres&quot;:&quot;Juan&quot;,&quot;apellidos&quot;:&quot;Pérez&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1723456789&quot;,&quot;correo&quot;:&quot;juan.perez@email.com&quot;,&quot;telefono&quot;:&quot;022345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;123&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1998-05-12&quot;,&quot;fecha_registro&quot;:&quot;2026-01-11T16:40:40.570Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-11&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},{&quot;id_cliente&quot;:&quot;bcbb5966-635a-4cda-b774-b71a5fab3bde&quot;,&quot;nombres&quot;:&quot;María&quot;,&quot;apellidos&quot;:&quot;Gómez Jimenez&quot;,&quot;tipo_identificacion&quot;:&quot;PASAPORTE&quot;,&quot;numero_identificacion&quot;:&quot;PA9876543&quot;,&quot;correo&quot;:&quot;maria.gomez@gmail.com&quot;,&quot;telefono&quot;:&quot;023334455&quot;,&quot;celular&quot;:&quot;0981122334&quot;,&quot;calle_principal&quot;:&quot;Av. 10 de Agosto&quot;,&quot;calle_secundaria&quot;:&quot;Colón&quot;,&quot;numero_casa&quot;:&quot;456B&quot;,&quot;nacionalidad&quot;:&quot;Colombiana&quot;,&quot;genero&quot;:&quot;F&quot;,&quot;estado_civil&quot;:&quot;Casada&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-11-30&quot;,&quot;fecha_registro&quot;:&quot;2026-01-11T17:06:45.923Z&quot;,&quot;origen&quot;:&quot;Feria Universitaria&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-11&quot;,&quot;estado&quot;:&quot;Nuevo&quot;}],&quot;meta&quot;:{&quot;totalItems&quot;:4,&quot;itemCount&quot;:4,&quot;itemsPerPage&quot;:10,&quot;totalPages&quot;:1,&quot;currentPage&quot;:1}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">23:54:42.962 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Clientes obtenidos con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;id_cliente&quot;: &quot;27ba9f5a-664b-4152-8b75-d77396ccbe2b&quot;,
+        &quot;nombres&quot;: &quot;Andrés Felipe&quot;,
+        &quot;apellidos&quot;: &quot;Gómez Torres&quot;,
+        &quot;tipo_identificacion&quot;: &quot;PASAPORTE&quot;,
+        &quot;numero_identificacion&quot;: &quot;AB1234567&quot;,
+        &quot;correo&quot;: &quot;andres.gomez@mail.com&quot;,
+        &quot;telefono&quot;: &quot;023445566&quot;,
+        &quot;celular&quot;: &quot;0981122334&quot;,
+        &quot;calle_principal&quot;: &quot;Av. República&quot;,
+        &quot;calle_secundaria&quot;: &quot;Diego de Almagro&quot;,
+        &quot;numero_casa&quot;: &quot;45B&quot;,
+        &quot;nacionalidad&quot;: &quot;Colombiana&quot;,
+        &quot;genero&quot;: &quot;M&quot;,
+        &quot;estado_civil&quot;: &quot;Casado&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1992-11-22&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-15T04:54:12.090Z&quot;,
+        &quot;origen&quot;: &quot;Referencia de un amigo&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-14&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      },
+      {
+        &quot;id_cliente&quot;: &quot;08d6e04b-1449-4b78-8a1a-5b2c72a71fc0&quot;,
+        &quot;nombres&quot;: &quot;Camila&quot;,
+        &quot;apellidos&quot;: &quot;Paredes Molina&quot;,
+        &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+        &quot;numero_identificacion&quot;: &quot;1721345678&quot;,
+        &quot;correo&quot;: &quot;camila.paredes@email.com&quot;,
+        &quot;telefono&quot;: &quot;022556677&quot;,
+        &quot;celular&quot;: &quot;0998877665&quot;,
+        &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+        &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+        &quot;numero_casa&quot;: &quot;120A&quot;,
+        &quot;nacionalidad&quot;: &quot;Ecuatoriana&quot;,
+        &quot;genero&quot;: &quot;M&quot;,
+        &quot;estado_civil&quot;: &quot;Soltero&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1998-05-14&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-14T23:51:32.347Z&quot;,
+        &quot;origen&quot;: &quot;Redes Sociales&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-14&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      },
+      {
+        &quot;id_cliente&quot;: &quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,
+        &quot;nombres&quot;: &quot;Juan&quot;,
+        &quot;apellidos&quot;: &quot;Pérez&quot;,
+        &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+        &quot;numero_identificacion&quot;: &quot;1723456789&quot;,
+        &quot;correo&quot;: &quot;juan.perez@email.com&quot;,
+        &quot;telefono&quot;: &quot;022345678&quot;,
+        &quot;celular&quot;: &quot;0998765432&quot;,
+        &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+        &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+        &quot;numero_casa&quot;: &quot;123&quot;,
+        &quot;nacionalidad&quot;: &quot;Ecuatoriana&quot;,
+        &quot;genero&quot;: &quot;M&quot;,
+        &quot;estado_civil&quot;: &quot;Soltero&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1998-05-12&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-11T16:40:40.570Z&quot;,
+        &quot;origen&quot;: &quot;Formulario Web&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-11&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      },
+      {
+        &quot;id_cliente&quot;: &quot;bcbb5966-635a-4cda-b774-b71a5fab3bde&quot;,
+        &quot;nombres&quot;: &quot;María&quot;,
+        &quot;apellidos&quot;: &quot;Gómez Jimenez&quot;,
+        &quot;tipo_identificacion&quot;: &quot;PASAPORTE&quot;,
+        &quot;numero_identificacion&quot;: &quot;PA9876543&quot;,
+        &quot;correo&quot;: &quot;maria.gomez@gmail.com&quot;,
+        &quot;telefono&quot;: &quot;023334455&quot;,
+        &quot;celular&quot;: &quot;0981122334&quot;,
+        &quot;calle_principal&quot;: &quot;Av. 10 de Agosto&quot;,
+        &quot;calle_secundaria&quot;: &quot;Colón&quot;,
+        &quot;numero_casa&quot;: &quot;456B&quot;,
+        &quot;nacionalidad&quot;: &quot;Colombiana&quot;,
+        &quot;genero&quot;: &quot;F&quot;,
+        &quot;estado_civil&quot;: &quot;Casada&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1992-11-30&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-11T17:06:45.923Z&quot;,
+        &quot;origen&quot;: &quot;Feria Universitaria&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-11&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      }
+    ],
+    &quot;meta&quot;: {
+      &quot;totalItems&quot;: 4,
+      &quot;itemCount&quot;: 4,
+      &quot;itemsPerPage&quot;: 10,
+      &quot;totalPages&quot;: 1,
+      &quot;currentPage&quot;: 1
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:39]</span>
+                <span class="scenario-name">GET by id - Obtener cliente por id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def clienteId = &#39;54bb3adc-220c-4c09-8ad7-07dc20fecd0d&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/cliente/cf7f1b93-da58-48cf-877d-fb883bf74bf9&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">23:54:42.977 request:
+1 &gt; GET http://localhost:3000/cliente/cf7f1b93-da58-48cf-877d-fb883bf74bf9
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:54:42.986 response time in milliseconds: 8
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 606
+1 &lt; ETag: W/&quot;25e-FQW5lfZJGoCUMCmbZ/ASCSlWK3s&quot;
+1 &lt; Date: Thu, 15 Jan 2026 04:54:42 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Cliente obtenido con éxito&quot;,&quot;data&quot;:{&quot;id_cliente&quot;:&quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,&quot;nombres&quot;:&quot;Juan&quot;,&quot;apellidos&quot;:&quot;Pérez&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1723456789&quot;,&quot;correo&quot;:&quot;juan.perez@email.com&quot;,&quot;telefono&quot;:&quot;022345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;123&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1998-05-12&quot;,&quot;fecha_registro&quot;:&quot;2026-01-11T16:40:40.570Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-11&quot;,&quot;estado&quot;:&quot;Nuevo&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">23:54:42.989 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Cliente obtenido con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;id_cliente&quot;: &quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,
+    &quot;nombres&quot;: &quot;Juan&quot;,
+    &quot;apellidos&quot;: &quot;Pérez&quot;,
+    &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+    &quot;numero_identificacion&quot;: &quot;1723456789&quot;,
+    &quot;correo&quot;: &quot;juan.perez@email.com&quot;,
+    &quot;telefono&quot;: &quot;022345678&quot;,
+    &quot;celular&quot;: &quot;0998765432&quot;,
+    &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+    &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+    &quot;numero_casa&quot;: &quot;123&quot;,
+    &quot;nacionalidad&quot;: &quot;Ecuatoriana&quot;,
+    &quot;genero&quot;: &quot;M&quot;,
+    &quot;estado_civil&quot;: &quot;Soltero&quot;,
+    &quot;fecha_nacimiento&quot;: &quot;1998-05-12&quot;,
+    &quot;fecha_registro&quot;: &quot;2026-01-11T16:40:40.570Z&quot;,
+    &quot;origen&quot;: &quot;Formulario Web&quot;,
+    &quot;fecha_cliente&quot;: &quot;2026-01-11&quot;,
+    &quot;estado&quot;: &quot;Nuevo&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:45]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:45]</span>
+                <span class="scenario-name">PUT - Actualizar cliente por id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>28</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:45]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:45]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:45]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def clienteId = &#39;54bb3adc-220c-4c09-8ad7-07dc20fecd0d&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/cliente/bcbb5966-635a-4cda-b774-b71a5fab3bde&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.47">{
+  &quot;nombres&quot;: &quot;María&quot;,
+  &quot;apellidos&quot;: &quot;Gómez Jimenez&quot;,
+  &quot;tipo_identificacion&quot;: &quot;PASAPORTE&quot;,
+  &quot;numero_identificacion&quot;: &quot;PA9876543&quot;,
+  &quot;correo&quot;: &quot;maria.gomez@gmail.com&quot;,
+  &quot;telefono&quot;: &quot;023334455&quot;,
+  &quot;celular&quot;: &quot;0981122334&quot;,
+  &quot;calle_principal&quot;: &quot;Av. 10 de Agosto&quot;,
+  &quot;calle_secundaria&quot;: &quot;Colón&quot;,
+  &quot;numero_casa&quot;: &quot;456B&quot;,
+  &quot;nacionalidad&quot;: &quot;Colombiana&quot;,
+  &quot;genero&quot;: &quot;F&quot;,
+  &quot;estado_civil&quot;: &quot;Casada&quot;,
+  &quot;fecha_nacimiento&quot;: &quot;1992-11-30&quot;,
+  &quot;origen&quot;: &quot;Feria Universitaria&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.67">23:54:43.021 request:
+1 &gt; PUT http://localhost:3000/cliente/bcbb5966-635a-4cda-b774-b71a5fab3bde
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 412
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nombres&quot;:&quot;María&quot;,&quot;apellidos&quot;:&quot;Gómez Jimenez&quot;,&quot;tipo_identificacion&quot;:&quot;PASAPORTE&quot;,&quot;numero_identificacion&quot;:&quot;PA9876543&quot;,&quot;correo&quot;:&quot;maria.gomez@gmail.com&quot;,&quot;telefono&quot;:&quot;023334455&quot;,&quot;celular&quot;:&quot;0981122334&quot;,&quot;calle_principal&quot;:&quot;Av. 10 de Agosto&quot;,&quot;calle_secundaria&quot;:&quot;Colón&quot;,&quot;numero_casa&quot;:&quot;456B&quot;,&quot;nacionalidad&quot;:&quot;Colombiana&quot;,&quot;genero&quot;:&quot;F&quot;,&quot;estado_civil&quot;:&quot;Casada&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-11-30&quot;,&quot;origen&quot;:&quot;Feria Universitaria&quot;}
+
+23:54:43.035 response time in milliseconds: 14
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 621
+1 &lt; ETag: W/&quot;26d-2Ffs1Y8YaZaGNt860OU+drkepNQ&quot;
+1 &lt; Date: Thu, 15 Jan 2026 04:54:43 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Cliente actualizado con éxito&quot;,&quot;data&quot;:{&quot;id_cliente&quot;:&quot;bcbb5966-635a-4cda-b774-b71a5fab3bde&quot;,&quot;nombres&quot;:&quot;María&quot;,&quot;apellidos&quot;:&quot;Gómez Jimenez&quot;,&quot;tipo_identificacion&quot;:&quot;PASAPORTE&quot;,&quot;numero_identificacion&quot;:&quot;PA9876543&quot;,&quot;correo&quot;:&quot;maria.gomez@gmail.com&quot;,&quot;telefono&quot;:&quot;023334455&quot;,&quot;celular&quot;:&quot;0981122334&quot;,&quot;calle_principal&quot;:&quot;Av. 10 de Agosto&quot;,&quot;calle_secundaria&quot;:&quot;Colón&quot;,&quot;numero_casa&quot;:&quot;456B&quot;,&quot;nacionalidad&quot;:&quot;Colombiana&quot;,&quot;genero&quot;:&quot;F&quot;,&quot;estado_civil&quot;:&quot;Casada&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-11-30&quot;,&quot;fecha_registro&quot;:&quot;2026-01-11T17:06:45.923Z&quot;,&quot;origen&quot;:&quot;Feria Universitaria&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-11&quot;,&quot;estado&quot;:&quot;Nuevo&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.69">23:54:43.039 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Cliente actualizado con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;id_cliente&quot;: &quot;bcbb5966-635a-4cda-b774-b71a5fab3bde&quot;,
+    &quot;nombres&quot;: &quot;María&quot;,
+    &quot;apellidos&quot;: &quot;Gómez Jimenez&quot;,
+    &quot;tipo_identificacion&quot;: &quot;PASAPORTE&quot;,
+    &quot;numero_identificacion&quot;: &quot;PA9876543&quot;,
+    &quot;correo&quot;: &quot;maria.gomez@gmail.com&quot;,
+    &quot;telefono&quot;: &quot;023334455&quot;,
+    &quot;celular&quot;: &quot;0981122334&quot;,
+    &quot;calle_principal&quot;: &quot;Av. 10 de Agosto&quot;,
+    &quot;calle_secundaria&quot;: &quot;Colón&quot;,
+    &quot;numero_casa&quot;: &quot;456B&quot;,
+    &quot;nacionalidad&quot;: &quot;Colombiana&quot;,
+    &quot;genero&quot;: &quot;F&quot;,
+    &quot;estado_civil&quot;: &quot;Casada&quot;,
+    &quot;fecha_nacimiento&quot;: &quot;1992-11-30&quot;,
+    &quot;fecha_registro&quot;: &quot;2026-01-11T17:06:45.923Z&quot;,
+    &quot;origen&quot;: &quot;Feria Universitaria&quot;,
+    &quot;fecha_cliente&quot;: &quot;2026-01-11&quot;,
+    &quot;estado&quot;: &quot;Nuevo&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:71]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:71]</span>
+                <span class="scenario-name">DELETE - Eliminar cliente por id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>25</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:71]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def clienteId = &#39;54bb3adc-220c-4c09-8ad7-07dc20fecd0d&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/cliente/27ba9f5a-664b-4152-8b75-d77396ccbe2b&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.73">23:54:43.058 request:
+1 &gt; DELETE http://localhost:3000/cliente/27ba9f5a-664b-4152-8b75-d77396ccbe2b
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:54:43.075 response time in milliseconds: 17
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 584
+1 &lt; ETag: W/&quot;248-fm8ELY0TwAISSTVjtdf1MJmcdh8&quot;
+1 &lt; Date: Thu, 15 Jan 2026 04:54:43 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Cliente eliminado con éxito&quot;,&quot;data&quot;:{&quot;nombres&quot;:&quot;Andrés Felipe&quot;,&quot;apellidos&quot;:&quot;Gómez Torres&quot;,&quot;tipo_identificacion&quot;:&quot;PASAPORTE&quot;,&quot;numero_identificacion&quot;:&quot;AB1234567&quot;,&quot;correo&quot;:&quot;andres.gomez@mail.com&quot;,&quot;telefono&quot;:&quot;023445566&quot;,&quot;celular&quot;:&quot;0981122334&quot;,&quot;calle_principal&quot;:&quot;Av. República&quot;,&quot;calle_secundaria&quot;:&quot;Diego de Almagro&quot;,&quot;numero_casa&quot;:&quot;45B&quot;,&quot;nacionalidad&quot;:&quot;Colombiana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-15T04:54:12.090Z&quot;,&quot;origen&quot;:&quot;Referencia de un amigo&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-14&quot;,&quot;estado&quot;:&quot;Nuevo&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.75">23:54:43.078 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Cliente eliminado con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;nombres&quot;: &quot;Andrés Felipe&quot;,
+    &quot;apellidos&quot;: &quot;Gómez Torres&quot;,
+    &quot;tipo_identificacion&quot;: &quot;PASAPORTE&quot;,
+    &quot;numero_identificacion&quot;: &quot;AB1234567&quot;,
+    &quot;correo&quot;: &quot;andres.gomez@mail.com&quot;,
+    &quot;telefono&quot;: &quot;023445566&quot;,
+    &quot;celular&quot;: &quot;0981122334&quot;,
+    &quot;calle_principal&quot;: &quot;Av. República&quot;,
+    &quot;calle_secundaria&quot;: &quot;Diego de Almagro&quot;,
+    &quot;numero_casa&quot;: &quot;45B&quot;,
+    &quot;nacionalidad&quot;: &quot;Colombiana&quot;,
+    &quot;genero&quot;: &quot;M&quot;,
+    &quot;estado_civil&quot;: &quot;Casado&quot;,
+    &quot;fecha_nacimiento&quot;: &quot;1992-11-22&quot;,
+    &quot;fecha_registro&quot;: &quot;2026-01-15T04:54:12.090Z&quot;,
+    &quot;origen&quot;: &quot;Referencia de un amigo&quot;,
+    &quot;fecha_cliente&quot;: &quot;2026-01-14&quot;,
+    &quot;estado&quot;: &quot;Nuevo&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

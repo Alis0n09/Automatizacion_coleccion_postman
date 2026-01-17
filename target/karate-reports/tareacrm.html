@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"8d82206c-c834-41b0-8f25-b901b3855686",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tareacrm</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-16 10:40:51 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>POST - Crear tarea</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>GET - Listar tareas</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:29]"><span>[3:29]</span> <span>GET by id - Obtener tarea por id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:37]"><span>[4:37]</span> <span>PUT - Actualizar tarea por id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:56]"><span>[5:56]</span> <span>DELETE - Eliminar tarea por id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tareacrm.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">CRUD Tarea CRM</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">POST - Crear tarea</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>944</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">95</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/tareas&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">85</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{
+  &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+  &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+  &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+  &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">636</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">22:40:50.850 request:
+1 &gt; POST http://localhost:3000/tareas
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 198
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;}
+
+22:40:50.968 response time in milliseconds: 112
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 371
+1 &lt; ETag: W/&quot;173-M+MgiUff2XKR0vds9e1XhEmUZfE&quot;
+1 &lt; Date: Sat, 17 Jan 2026 03:40:50 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Tarea creada con éxito&quot;,&quot;data&quot;:{&quot;id_tarea&quot;:&quot;57d0884f-dea1-498b-a8bc-f83596bd10d6&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">126</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">22:40:51.097 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Tarea creada con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;id_tarea&quot;: &quot;57d0884f-dea1-498b-a8bc-f83596bd10d6&quot;,
+    &quot;empleado&quot;: {
+      &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;
+    },
+    &quot;cliente&quot;: {
+      &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;
+    },
+    &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+    &quot;fecha_asignacion&quot;: null,
+    &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+    &quot;estado&quot;: null
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">GET - Listar tareas</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>93</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/tareas&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">83</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">22:40:51.135 request:
+1 &gt; GET http://localhost:3000/tareas
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:40:51.211 response time in milliseconds: 75
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 10554
+1 &lt; ETag: W/&quot;293a-YPPzIj26133UjDviMww8veDj4rY&quot;
+1 &lt; Date: Sat, 17 Jan 2026 03:40:51 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Tareas obtenidas con éxito&quot;,&quot;data&quot;:{&quot;items&quot;:[{&quot;id_tarea&quot;:&quot;c6bfa4fd-7714-4f41-9429-4b03d1e523c4&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;4e2b0d66-b422-433c-ab69-467bb1dc7a54&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;56815f39-73fa-4294-800f-578dff6c3c68&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;132820f9-9047-43cd-b3d8-74688391926e&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;c9cbee98-f464-49e3-9fa1-56d41ca96657&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;4eeed12e-42b7-4dd9-8d3d-1be5645e6822&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;50a8de74-8c1d-481f-9396-f07ba1b72166&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;6fb9beb5-d707-4cfc-afd3-60efe1380a14&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;778b2cfd-b076-4cbd-a814-520eea85de15&quot;,&quot;nombres&quot;:&quot;Andrea Carolina&quot;,&quot;apellidos&quot;:&quot;Vega Morales&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1712345679&quot;,&quot;correo&quot;:&quot;andrea.vega@empresa.com&quot;,&quot;telefono&quot;:&quot;0976543210&quot;,&quot;departamento&quot;:&quot;Finanzas&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;212a0d00-318c-4ead-b678-616aab93655a&quot;,&quot;nombres&quot;:&quot;Luis Alberto&quot;,&quot;apellidos&quot;:&quot;Paredes Gómez&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0923456789&quot;,&quot;correo&quot;:&quot;luis.paredes@correo.com&quot;,&quot;telefono&quot;:&quot;022456789&quot;,&quot;celular&quot;:&quot;0981122334&quot;,&quot;calle_principal&quot;:&quot;Av. Colón&quot;,&quot;calle_secundaria&quot;:&quot;Av. 6 de Diciembre&quot;,&quot;numero_casa&quot;:&quot;45B&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1988-05-14&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:29:06.822Z&quot;,&quot;origen&quot;:&quot;Sistema Interno&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;08cc22b0-c566-4809-84cd-39d69c599f57&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null},{&quot;id_tarea&quot;:&quot;af7afd03-6da7-4ee8-9ab7-d66baa0fee6f&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null}],&quot;meta&quot;:{&quot;totalItems&quot;:11,&quot;itemCount&quot;:10,&quot;itemsPerPage&quot;:10,&quot;totalPages&quot;:2,&quot;currentPage&quot;:1}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">22:40:51.222 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Tareas obtenidas con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;id_tarea&quot;: &quot;c6bfa4fd-7714-4f41-9429-4b03d1e523c4&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;4e2b0d66-b422-433c-ab69-467bb1dc7a54&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;56815f39-73fa-4294-800f-578dff6c3c68&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;132820f9-9047-43cd-b3d8-74688391926e&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;c9cbee98-f464-49e3-9fa1-56d41ca96657&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;4eeed12e-42b7-4dd9-8d3d-1be5645e6822&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;50a8de74-8c1d-481f-9396-f07ba1b72166&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;6fb9beb5-d707-4cfc-afd3-60efe1380a14&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;778b2cfd-b076-4cbd-a814-520eea85de15&quot;,
+          &quot;nombres&quot;: &quot;Andrea Carolina&quot;,
+          &quot;apellidos&quot;: &quot;Vega Morales&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1712345679&quot;,
+          &quot;correo&quot;: &quot;andrea.vega@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0976543210&quot;,
+          &quot;departamento&quot;: &quot;Finanzas&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;212a0d00-318c-4ead-b678-616aab93655a&quot;,
+          &quot;nombres&quot;: &quot;Luis Alberto&quot;,
+          &quot;apellidos&quot;: &quot;Paredes Gómez&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0923456789&quot;,
+          &quot;correo&quot;: &quot;luis.paredes@correo.com&quot;,
+          &quot;telefono&quot;: &quot;022456789&quot;,
+          &quot;celular&quot;: &quot;0981122334&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Colón&quot;,
+          &quot;calle_secundaria&quot;: &quot;Av. 6 de Diciembre&quot;,
+          &quot;numero_casa&quot;: &quot;45B&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Soltero&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1988-05-14&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:29:06.822Z&quot;,
+          &quot;origen&quot;: &quot;Sistema Interno&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;08cc22b0-c566-4809-84cd-39d69c599f57&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      },
+      {
+        &quot;id_tarea&quot;: &quot;af7afd03-6da7-4ee8-9ab7-d66baa0fee6f&quot;,
+        &quot;empleado&quot;: {
+          &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+          &quot;nombres&quot;: &quot;María Fernanda&quot;,
+          &quot;apellidos&quot;: &quot;López Andrade&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+          &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+          &quot;telefono&quot;: &quot;0987654321&quot;,
+          &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+        },
+        &quot;cliente&quot;: {
+          &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+          &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+          &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+          &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+          &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+          &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+          &quot;telefono&quot;: &quot;023345678&quot;,
+          &quot;celular&quot;: &quot;0998765432&quot;,
+          &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+          &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+          &quot;numero_casa&quot;: &quot;152A&quot;,
+          &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+          &quot;genero&quot;: &quot;M&quot;,
+          &quot;estado_civil&quot;: &quot;Casado&quot;,
+          &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+          &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+          &quot;origen&quot;: &quot;Formulario Web&quot;,
+          &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+          &quot;estado&quot;: &quot;Nuevo&quot;
+        },
+        &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+        &quot;fecha_asignacion&quot;: null,
+        &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+        &quot;estado&quot;: null
+      }
+    ],
+    &quot;meta&quot;: {
+      &quot;totalItems&quot;: 11,
+      &quot;itemCount&quot;: 10,
+      &quot;itemsPerPage&quot;: 10,
+      &quot;totalPages&quot;: 2,
+      &quot;currentPage&quot;: 1
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:29]</span>
+                <span class="scenario-name">GET by id - Obtener tarea por id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>33</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/tareas/c6bfa4fd-7714-4f41-9429-4b03d1e523c4&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">22:40:51.240 request:
+1 &gt; GET http://localhost:3000/tareas/c6bfa4fd-7714-4f41-9429-4b03d1e523c4
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:40:51.261 response time in milliseconds: 15
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1101
+1 &lt; ETag: W/&quot;44d-j3XLeMOXubqJjwpibXjJ5/2VXyQ&quot;
+1 &lt; Date: Sat, 17 Jan 2026 03:40:51 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Tarea obtenida con éxito&quot;,&quot;data&quot;:{&quot;id_tarea&quot;:&quot;c6bfa4fd-7714-4f41-9429-4b03d1e523c4&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;nombres&quot;:&quot;María Fernanda&quot;,&quot;apellidos&quot;:&quot;López Andrade&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;0912345678&quot;,&quot;correo&quot;:&quot;maria.lopez@empresa.com&quot;,&quot;telefono&quot;:&quot;0987654321&quot;,&quot;departamento&quot;:&quot;Recursos Humanos&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;nombres&quot;:&quot;Carlos Andrés&quot;,&quot;apellidos&quot;:&quot;Mendoza López&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1102345678&quot;,&quot;correo&quot;:&quot;carlos.mendoza@mail.com&quot;,&quot;telefono&quot;:&quot;023345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;152A&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1990-11-22&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:21:44.881Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">22:40:51.269 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Tarea obtenida con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;id_tarea&quot;: &quot;c6bfa4fd-7714-4f41-9429-4b03d1e523c4&quot;,
+    &quot;empleado&quot;: {
+      &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+      &quot;nombres&quot;: &quot;María Fernanda&quot;,
+      &quot;apellidos&quot;: &quot;López Andrade&quot;,
+      &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+      &quot;numero_identificacion&quot;: &quot;0912345678&quot;,
+      &quot;correo&quot;: &quot;maria.lopez@empresa.com&quot;,
+      &quot;telefono&quot;: &quot;0987654321&quot;,
+      &quot;departamento&quot;: &quot;Recursos Humanos&quot;
+    },
+    &quot;cliente&quot;: {
+      &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+      &quot;nombres&quot;: &quot;Carlos Andrés&quot;,
+      &quot;apellidos&quot;: &quot;Mendoza López&quot;,
+      &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+      &quot;numero_identificacion&quot;: &quot;1102345678&quot;,
+      &quot;correo&quot;: &quot;carlos.mendoza@mail.com&quot;,
+      &quot;telefono&quot;: &quot;023345678&quot;,
+      &quot;celular&quot;: &quot;0998765432&quot;,
+      &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+      &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+      &quot;numero_casa&quot;: &quot;152A&quot;,
+      &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+      &quot;genero&quot;: &quot;M&quot;,
+      &quot;estado_civil&quot;: &quot;Casado&quot;,
+      &quot;fecha_nacimiento&quot;: &quot;1990-11-22&quot;,
+      &quot;fecha_registro&quot;: &quot;2026-01-16T02:21:44.881Z&quot;,
+      &quot;origen&quot;: &quot;Formulario Web&quot;,
+      &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+      &quot;estado&quot;: &quot;Nuevo&quot;
+    },
+    &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+    &quot;fecha_asignacion&quot;: null,
+    &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+    &quot;estado&quot;: null
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:37]</span>
+                <span class="scenario-name">PUT - Actualizar tarea por id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>35</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/tareas/4e2b0d66-b422-433c-ab69-467bb1dc7a54&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.40">{
+  &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,
+  &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,
+  &quot;descripcion&quot;: &quot;Seguimiento al cliente para aprobación beca&quot;,
+  &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">31</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">22:40:51.286 request:
+1 &gt; PUT http://localhost:3000/tareas/4e2b0d66-b422-433c-ab69-467bb1dc7a54
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 200
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;,&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;,&quot;descripcion&quot;:&quot;Seguimiento al cliente para aprobación beca&quot;,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;}
+
+22:40:51.314 response time in milliseconds: 27
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 378
+1 &lt; ETag: W/&quot;17a-BqZZBQwYsl0Wt2zalVXmm7fS9S0&quot;
+1 &lt; Date: Sat, 17 Jan 2026 03:40:51 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Tarea actualizada con éxito&quot;,&quot;data&quot;:{&quot;id_tarea&quot;:&quot;4e2b0d66-b422-433c-ab69-467bb1dc7a54&quot;,&quot;empleado&quot;:{&quot;id_empleado&quot;:&quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;},&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;},&quot;descripcion&quot;:&quot;Seguimiento al cliente para aprobación beca&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">22:40:51.318 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Tarea actualizada con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;id_tarea&quot;: &quot;4e2b0d66-b422-433c-ab69-467bb1dc7a54&quot;,
+    &quot;empleado&quot;: {
+      &quot;id_empleado&quot;: &quot;5f8b48e1-5fe2-43a8-9a52-a5fdb2081375&quot;
+    },
+    &quot;cliente&quot;: {
+      &quot;id_cliente&quot;: &quot;4473ed20-e685-4d7d-aa3a-cf09e56d9957&quot;
+    },
+    &quot;descripcion&quot;: &quot;Seguimiento al cliente para aprobación beca&quot;,
+    &quot;fecha_asignacion&quot;: null,
+    &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+    &quot;estado&quot;: null
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:56]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:56]</span>
+                <span class="scenario-name">DELETE - Eliminar tarea por id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>20</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:56]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/tareas/56815f39-73fa-4294-800f-578dff6c3c68&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">22:40:51.331 request:
+1 &gt; DELETE http://localhost:3000/tareas/56815f39-73fa-4294-800f-578dff6c3c68
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:40:51.344 response time in milliseconds: 13
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 194
+1 &lt; ETag: W/&quot;c2-qGfhuZnlZbKy45c3DdRV6f9SGwE&quot;
+1 &lt; Date: Sat, 17 Jan 2026 03:40:51 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Tarea eliminada con éxito&quot;,&quot;data&quot;:{&quot;descripcion&quot;:&quot;Seguimiento al cliente para una entrevista&quot;,&quot;fecha_asignacion&quot;:null,&quot;fecha_vencimiento&quot;:&quot;2025-12-25&quot;,&quot;estado&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">22:40:51.348 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Tarea eliminada con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;descripcion&quot;: &quot;Seguimiento al cliente para una entrevista&quot;,
+    &quot;fecha_asignacion&quot;: null,
+    &quot;fecha_vencimiento&quot;: &quot;2025-12-25&quot;,
+    &quot;estado&quot;: null
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

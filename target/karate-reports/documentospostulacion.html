@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"8d82206c-c834-41b0-8f25-b901b3855686",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>documentospostulacion</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-15 11:07:47 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>POST - Crear documento postulacion</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:26]"><span>[2:26]</span> <span>GET - Listar documentos postulacion</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:32]"><span>[3:32]</span> <span>GET by id - Obtener documento postulacion</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:38]"><span>[4:38]</span> <span>PUT - Actualizar documento postulacion</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:55]"><span>[5:55]</span> <span>DELETE - Eliminar documento postulacion</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">documentospostulacion.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">CRUD Documentos Postulacion</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">POST - Crear documento postulacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>968</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">97</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def documentosPath = &#39;/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.9">{
+  &quot;id_postulacion&quot;: &quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,
+  &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+  &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+  &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+  &quot;estado_documento&quot;: &quot;En revisión&quot;,
+  &quot;observaciones&quot;: &quot;Documento legible, pendiente de validación institucional&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">663</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">23:07:47.485 request:
+1 &gt; POST http://localhost:3000/documentos-postulacion
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 348
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id_postulacion&quot;:&quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https:\/\/mi-servidor.com\/documentos\/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;En revisión&quot;,&quot;observaciones&quot;:&quot;Documento legible, pendiente de validación institucional&quot;}
+
+23:07:47.619 response time in milliseconds: 131
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 494
+1 &lt; ETag: W/&quot;1ee-2BAW4N461KJDWgXO55Phndg0/a8&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:07:47 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;id_documento&quot;:&quot;06979cf8-9dc9-4f6e-ab2b-0f56898d6b3e&quot;,&quot;postulacion&quot;:{&quot;id_postulacion&quot;:&quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;},&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;En revisión&quot;,&quot;observaciones&quot;:&quot;Documento legible, pendiente de validación institucional&quot;,&quot;created_at&quot;:&quot;2026-01-16T04:07:47.588Z&quot;,&quot;updated_at&quot;:&quot;2026-01-16T04:07:47.588Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">132</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">23:07:47.754 [print] {
+  &quot;id_documento&quot;: &quot;06979cf8-9dc9-4f6e-ab2b-0f56898d6b3e&quot;,
+  &quot;postulacion&quot;: {
+    &quot;id_postulacion&quot;: &quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;
+  },
+  &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+  &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+  &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+  &quot;estado_documento&quot;: &quot;En revisión&quot;,
+  &quot;observaciones&quot;: &quot;Documento legible, pendiente de validación institucional&quot;,
+  &quot;created_at&quot;: &quot;2026-01-16T04:07:47.588Z&quot;,
+  &quot;updated_at&quot;: &quot;2026-01-16T04:07:47.588Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def documentoId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:26]</span>
+                <span class="scenario-name">GET - Listar documentos postulacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>23</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def documentosPath = &#39;/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">23:07:47.797 request:
+1 &gt; GET http://localhost:3000/documentos-postulacion
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:07:47.809 response time in milliseconds: 11
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4341
+1 &lt; ETag: W/&quot;10f5-vAOicNpr2bpgV8SEdgvJCOXYlAY&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:07:47 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[{&quot;id_documento&quot;:&quot;e29b23b7-5005-464e-a49d-797a722f5d09&quot;,&quot;postulacion&quot;:{&quot;id_postulacion&quot;:&quot;3996273a-8f42-4b99-a6a3-1650cb7ee3aa&quot;,&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,&quot;nombres&quot;:&quot;Juan&quot;,&quot;apellidos&quot;:&quot;Pérez&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1723456789&quot;,&quot;correo&quot;:&quot;juan.perez@email.com&quot;,&quot;telefono&quot;:&quot;022345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;123&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1998-05-12&quot;,&quot;fecha_registro&quot;:&quot;2026-01-11T16:40:40.570Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-11&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;carrera&quot;:{&quot;id_carrera&quot;:&quot;5cc61230-5b3b-4f01-a3f7-944cbacfd95b&quot;,&quot;nombre_carrera&quot;:&quot;Administración de Empresas&quot;,&quot;facultad&quot;:&quot;Ciencias Administrativas&quot;,&quot;duracion_semestres&quot;:8,&quot;nivel_grado&quot;:&quot;Pregrado&quot;,&quot;cupos_disponibles&quot;:180,&quot;estado&quot;:&quot;1&quot;},&quot;periodo_academico&quot;:&quot;2025-1&quot;,&quot;fecha_postulacion&quot;:&quot;2026-01-11&quot;,&quot;estado_postulacion&quot;:&quot;Pendiente&quot;,&quot;observaciones&quot;:&quot;Documentos incompletos&quot;},&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;En revisión&quot;,&quot;observaciones&quot;:&quot;Documento legible, pendiente de validación institucional&quot;,&quot;created_at&quot;:&quot;2026-01-11T17:18:08.967Z&quot;,&quot;updated_at&quot;:&quot;2026-01-11T17:18:08.967Z&quot;},{&quot;id_documento&quot;:&quot;06979cf8-9dc9-4f6e-ab2b-0f56898d6b3e&quot;,&quot;postulacion&quot;:{&quot;id_postulacion&quot;:&quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;a8f47d69-58b3-4200-878c-f16528027b49&quot;,&quot;nombres&quot;:&quot;Javier Alejandro&quot;,&quot;apellidos&quot;:&quot;Ruiz Castillo&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1710987654&quot;,&quot;correo&quot;:&quot;javier.ruiz@correo.com&quot;,&quot;telefono&quot;:&quot;023334455&quot;,&quot;celular&quot;:&quot;0978899001&quot;,&quot;calle_principal&quot;:&quot;Av. Occidental&quot;,&quot;calle_secundaria&quot;:&quot;Rumipamba&quot;,&quot;numero_casa&quot;:&quot;120C&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-09-03&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:54:19.493Z&quot;,&quot;origen&quot;:&quot;Portal Institucional&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;carrera&quot;:{&quot;id_carrera&quot;:&quot;8aff42d0-54e2-4ded-b033-4bda0325083f&quot;,&quot;nombre_carrera&quot;:&quot;Ingeniería en Sistemas de Información&quot;,&quot;facultad&quot;:&quot;Ingeniería y Ciencias Aplicadas&quot;,&quot;duracion_semestres&quot;:8,&quot;nivel_grado&quot;:&quot;Pregrado&quot;,&quot;cupos_disponibles&quot;:120,&quot;estado&quot;:&quot;1&quot;},&quot;periodo_academico&quot;:&quot;2025-1&quot;,&quot;fecha_postulacion&quot;:&quot;2026-01-15&quot;,&quot;estado_postulacion&quot;:&quot;Pendiente&quot;,&quot;observaciones&quot;:&quot;Documentos incompletos&quot;},&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;En revisión&quot;,&quot;observaciones&quot;:&quot;Documento legible, pendiente de validación institucional&quot;,&quot;created_at&quot;:&quot;2026-01-16T04:07:47.588Z&quot;,&quot;updated_at&quot;:&quot;2026-01-16T04:07:47.588Z&quot;},{&quot;id_documento&quot;:&quot;98c922ea-e591-4587-92c4-518373d882c5&quot;,&quot;postulacion&quot;:{&quot;id_postulacion&quot;:&quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;a8f47d69-58b3-4200-878c-f16528027b49&quot;,&quot;nombres&quot;:&quot;Javier Alejandro&quot;,&quot;apellidos&quot;:&quot;Ruiz Castillo&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1710987654&quot;,&quot;correo&quot;:&quot;javier.ruiz@correo.com&quot;,&quot;telefono&quot;:&quot;023334455&quot;,&quot;celular&quot;:&quot;0978899001&quot;,&quot;calle_principal&quot;:&quot;Av. Occidental&quot;,&quot;calle_secundaria&quot;:&quot;Rumipamba&quot;,&quot;numero_casa&quot;:&quot;120C&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriano&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Casado&quot;,&quot;fecha_nacimiento&quot;:&quot;1992-09-03&quot;,&quot;fecha_registro&quot;:&quot;2026-01-16T02:54:19.493Z&quot;,&quot;origen&quot;:&quot;Portal Institucional&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-15&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;carrera&quot;:{&quot;id_carrera&quot;:&quot;8aff42d0-54e2-4ded-b033-4bda0325083f&quot;,&quot;nombre_carrera&quot;:&quot;Ingeniería en Sistemas de Información&quot;,&quot;facultad&quot;:&quot;Ingeniería y Ciencias Aplicadas&quot;,&quot;duracion_semestres&quot;:8,&quot;nivel_grado&quot;:&quot;Pregrado&quot;,&quot;cupos_disponibles&quot;:120,&quot;estado&quot;:&quot;1&quot;},&quot;periodo_academico&quot;:&quot;2025-1&quot;,&quot;fecha_postulacion&quot;:&quot;2026-01-15&quot;,&quot;estado_postulacion&quot;:&quot;Pendiente&quot;,&quot;observaciones&quot;:&quot;Documentos incompletos&quot;},&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;En revisión&quot;,&quot;observaciones&quot;:&quot;Documento legible, pendiente de validación institucional&quot;,&quot;created_at&quot;:&quot;2026-01-16T04:06:00.123Z&quot;,&quot;updated_at&quot;:&quot;2026-01-16T04:06:00.123Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">23:07:47.814 [print] [
+  {
+    &quot;id_documento&quot;: &quot;e29b23b7-5005-464e-a49d-797a722f5d09&quot;,
+    &quot;postulacion&quot;: {
+      &quot;id_postulacion&quot;: &quot;3996273a-8f42-4b99-a6a3-1650cb7ee3aa&quot;,
+      &quot;cliente&quot;: {
+        &quot;id_cliente&quot;: &quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,
+        &quot;nombres&quot;: &quot;Juan&quot;,
+        &quot;apellidos&quot;: &quot;Pérez&quot;,
+        &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+        &quot;numero_identificacion&quot;: &quot;1723456789&quot;,
+        &quot;correo&quot;: &quot;juan.perez@email.com&quot;,
+        &quot;telefono&quot;: &quot;022345678&quot;,
+        &quot;celular&quot;: &quot;0998765432&quot;,
+        &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+        &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+        &quot;numero_casa&quot;: &quot;123&quot;,
+        &quot;nacionalidad&quot;: &quot;Ecuatoriana&quot;,
+        &quot;genero&quot;: &quot;M&quot;,
+        &quot;estado_civil&quot;: &quot;Soltero&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1998-05-12&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-11T16:40:40.570Z&quot;,
+        &quot;origen&quot;: &quot;Formulario Web&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-11&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      },
+      &quot;carrera&quot;: {
+        &quot;id_carrera&quot;: &quot;5cc61230-5b3b-4f01-a3f7-944cbacfd95b&quot;,
+        &quot;nombre_carrera&quot;: &quot;Administración de Empresas&quot;,
+        &quot;facultad&quot;: &quot;Ciencias Administrativas&quot;,
+        &quot;duracion_semestres&quot;: 8,
+        &quot;nivel_grado&quot;: &quot;Pregrado&quot;,
+        &quot;cupos_disponibles&quot;: 180,
+        &quot;estado&quot;: &quot;1&quot;
+      },
+      &quot;periodo_academico&quot;: &quot;2025-1&quot;,
+      &quot;fecha_postulacion&quot;: &quot;2026-01-11&quot;,
+      &quot;estado_postulacion&quot;: &quot;Pendiente&quot;,
+      &quot;observaciones&quot;: &quot;Documentos incompletos&quot;
+    },
+    &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+    &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+    &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+    &quot;estado_documento&quot;: &quot;En revisión&quot;,
+    &quot;observaciones&quot;: &quot;Documento legible, pendiente de validación institucional&quot;,
+    &quot;created_at&quot;: &quot;2026-01-11T17:18:08.967Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-11T17:18:08.967Z&quot;
+  },
+  {
+    &quot;id_documento&quot;: &quot;06979cf8-9dc9-4f6e-ab2b-0f56898d6b3e&quot;,
+    &quot;postulacion&quot;: {
+      &quot;id_postulacion&quot;: &quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,
+      &quot;cliente&quot;: {
+        &quot;id_cliente&quot;: &quot;a8f47d69-58b3-4200-878c-f16528027b49&quot;,
+        &quot;nombres&quot;: &quot;Javier Alejandro&quot;,
+        &quot;apellidos&quot;: &quot;Ruiz Castillo&quot;,
+        &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+        &quot;numero_identificacion&quot;: &quot;1710987654&quot;,
+        &quot;correo&quot;: &quot;javier.ruiz@correo.com&quot;,
+        &quot;telefono&quot;: &quot;023334455&quot;,
+        &quot;celular&quot;: &quot;0978899001&quot;,
+        &quot;calle_principal&quot;: &quot;Av. Occidental&quot;,
+        &quot;calle_secundaria&quot;: &quot;Rumipamba&quot;,
+        &quot;numero_casa&quot;: &quot;120C&quot;,
+        &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+        &quot;genero&quot;: &quot;M&quot;,
+        &quot;estado_civil&quot;: &quot;Casado&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1992-09-03&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-16T02:54:19.493Z&quot;,
+        &quot;origen&quot;: &quot;Portal Institucional&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      },
+      &quot;carrera&quot;: {
+        &quot;id_carrera&quot;: &quot;8aff42d0-54e2-4ded-b033-4bda0325083f&quot;,
+        &quot;nombre_carrera&quot;: &quot;Ingeniería en Sistemas de Información&quot;,
+        &quot;facultad&quot;: &quot;Ingeniería y Ciencias Aplicadas&quot;,
+        &quot;duracion_semestres&quot;: 8,
+        &quot;nivel_grado&quot;: &quot;Pregrado&quot;,
+        &quot;cupos_disponibles&quot;: 120,
+        &quot;estado&quot;: &quot;1&quot;
+      },
+      &quot;periodo_academico&quot;: &quot;2025-1&quot;,
+      &quot;fecha_postulacion&quot;: &quot;2026-01-15&quot;,
+      &quot;estado_postulacion&quot;: &quot;Pendiente&quot;,
+      &quot;observaciones&quot;: &quot;Documentos incompletos&quot;
+    },
+    &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+    &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+    &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+    &quot;estado_documento&quot;: &quot;En revisión&quot;,
+    &quot;observaciones&quot;: &quot;Documento legible, pendiente de validación institucional&quot;,
+    &quot;created_at&quot;: &quot;2026-01-16T04:07:47.588Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-16T04:07:47.588Z&quot;
+  },
+  {
+    &quot;id_documento&quot;: &quot;98c922ea-e591-4587-92c4-518373d882c5&quot;,
+    &quot;postulacion&quot;: {
+      &quot;id_postulacion&quot;: &quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,
+      &quot;cliente&quot;: {
+        &quot;id_cliente&quot;: &quot;a8f47d69-58b3-4200-878c-f16528027b49&quot;,
+        &quot;nombres&quot;: &quot;Javier Alejandro&quot;,
+        &quot;apellidos&quot;: &quot;Ruiz Castillo&quot;,
+        &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+        &quot;numero_identificacion&quot;: &quot;1710987654&quot;,
+        &quot;correo&quot;: &quot;javier.ruiz@correo.com&quot;,
+        &quot;telefono&quot;: &quot;023334455&quot;,
+        &quot;celular&quot;: &quot;0978899001&quot;,
+        &quot;calle_principal&quot;: &quot;Av. Occidental&quot;,
+        &quot;calle_secundaria&quot;: &quot;Rumipamba&quot;,
+        &quot;numero_casa&quot;: &quot;120C&quot;,
+        &quot;nacionalidad&quot;: &quot;Ecuatoriano&quot;,
+        &quot;genero&quot;: &quot;M&quot;,
+        &quot;estado_civil&quot;: &quot;Casado&quot;,
+        &quot;fecha_nacimiento&quot;: &quot;1992-09-03&quot;,
+        &quot;fecha_registro&quot;: &quot;2026-01-16T02:54:19.493Z&quot;,
+        &quot;origen&quot;: &quot;Portal Institucional&quot;,
+        &quot;fecha_cliente&quot;: &quot;2026-01-15&quot;,
+        &quot;estado&quot;: &quot;Nuevo&quot;
+      },
+      &quot;carrera&quot;: {
+        &quot;id_carrera&quot;: &quot;8aff42d0-54e2-4ded-b033-4bda0325083f&quot;,
+        &quot;nombre_carrera&quot;: &quot;Ingeniería en Sistemas de Información&quot;,
+        &quot;facultad&quot;: &quot;Ingeniería y Ciencias Aplicadas&quot;,
+        &quot;duracion_semestres&quot;: 8,
+        &quot;nivel_grado&quot;: &quot;Pregrado&quot;,
+        &quot;cupos_disponibles&quot;: 120,
+        &quot;estado&quot;: &quot;1&quot;
+      },
+      &quot;periodo_academico&quot;: &quot;2025-1&quot;,
+      &quot;fecha_postulacion&quot;: &quot;2026-01-15&quot;,
+      &quot;estado_postulacion&quot;: &quot;Pendiente&quot;,
+      &quot;observaciones&quot;: &quot;Documentos incompletos&quot;
+    },
+    &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+    &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+    &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+    &quot;estado_documento&quot;: &quot;En revisión&quot;,
+    &quot;observaciones&quot;: &quot;Documento legible, pendiente de validación institucional&quot;,
+    &quot;created_at&quot;: &quot;2026-01-16T04:06:00.123Z&quot;,
+    &quot;updated_at&quot;: &quot;2026-01-16T04:06:00.123Z&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:32]</span>
+                <span class="scenario-name">GET by id - Obtener documento postulacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>23</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def documentosPath = &#39;/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/documentos-postulacion/e29b23b7-5005-464e-a49d-797a722f5d09&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">23:07:47.835 request:
+1 &gt; GET http://localhost:3000/documentos-postulacion/e29b23b7-5005-464e-a49d-797a722f5d09
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:07:47.851 response time in milliseconds: 15
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1417
+1 &lt; ETag: W/&quot;589-H+yX5gTSlvxumLEVUTMTgOLnnxo&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:07:47 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;id_documento&quot;:&quot;e29b23b7-5005-464e-a49d-797a722f5d09&quot;,&quot;postulacion&quot;:{&quot;id_postulacion&quot;:&quot;3996273a-8f42-4b99-a6a3-1650cb7ee3aa&quot;,&quot;cliente&quot;:{&quot;id_cliente&quot;:&quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,&quot;nombres&quot;:&quot;Juan&quot;,&quot;apellidos&quot;:&quot;Pérez&quot;,&quot;tipo_identificacion&quot;:&quot;CEDULA&quot;,&quot;numero_identificacion&quot;:&quot;1723456789&quot;,&quot;correo&quot;:&quot;juan.perez@email.com&quot;,&quot;telefono&quot;:&quot;022345678&quot;,&quot;celular&quot;:&quot;0998765432&quot;,&quot;calle_principal&quot;:&quot;Av. Amazonas&quot;,&quot;calle_secundaria&quot;:&quot;Naciones Unidas&quot;,&quot;numero_casa&quot;:&quot;123&quot;,&quot;nacionalidad&quot;:&quot;Ecuatoriana&quot;,&quot;genero&quot;:&quot;M&quot;,&quot;estado_civil&quot;:&quot;Soltero&quot;,&quot;fecha_nacimiento&quot;:&quot;1998-05-12&quot;,&quot;fecha_registro&quot;:&quot;2026-01-11T16:40:40.570Z&quot;,&quot;origen&quot;:&quot;Formulario Web&quot;,&quot;fecha_cliente&quot;:&quot;2026-01-11&quot;,&quot;estado&quot;:&quot;Nuevo&quot;},&quot;carrera&quot;:{&quot;id_carrera&quot;:&quot;5cc61230-5b3b-4f01-a3f7-944cbacfd95b&quot;,&quot;nombre_carrera&quot;:&quot;Administración de Empresas&quot;,&quot;facultad&quot;:&quot;Ciencias Administrativas&quot;,&quot;duracion_semestres&quot;:8,&quot;nivel_grado&quot;:&quot;Pregrado&quot;,&quot;cupos_disponibles&quot;:180,&quot;estado&quot;:&quot;1&quot;},&quot;periodo_academico&quot;:&quot;2025-1&quot;,&quot;fecha_postulacion&quot;:&quot;2026-01-11&quot;,&quot;estado_postulacion&quot;:&quot;Pendiente&quot;,&quot;observaciones&quot;:&quot;Documentos incompletos&quot;},&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;En revisión&quot;,&quot;observaciones&quot;:&quot;Documento legible, pendiente de validación institucional&quot;,&quot;created_at&quot;:&quot;2026-01-11T17:18:08.967Z&quot;,&quot;updated_at&quot;:&quot;2026-01-11T17:18:08.967Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">23:07:47.854 [print] {
+  &quot;id_documento&quot;: &quot;e29b23b7-5005-464e-a49d-797a722f5d09&quot;,
+  &quot;postulacion&quot;: {
+    &quot;id_postulacion&quot;: &quot;3996273a-8f42-4b99-a6a3-1650cb7ee3aa&quot;,
+    &quot;cliente&quot;: {
+      &quot;id_cliente&quot;: &quot;cf7f1b93-da58-48cf-877d-fb883bf74bf9&quot;,
+      &quot;nombres&quot;: &quot;Juan&quot;,
+      &quot;apellidos&quot;: &quot;Pérez&quot;,
+      &quot;tipo_identificacion&quot;: &quot;CEDULA&quot;,
+      &quot;numero_identificacion&quot;: &quot;1723456789&quot;,
+      &quot;correo&quot;: &quot;juan.perez@email.com&quot;,
+      &quot;telefono&quot;: &quot;022345678&quot;,
+      &quot;celular&quot;: &quot;0998765432&quot;,
+      &quot;calle_principal&quot;: &quot;Av. Amazonas&quot;,
+      &quot;calle_secundaria&quot;: &quot;Naciones Unidas&quot;,
+      &quot;numero_casa&quot;: &quot;123&quot;,
+      &quot;nacionalidad&quot;: &quot;Ecuatoriana&quot;,
+      &quot;genero&quot;: &quot;M&quot;,
+      &quot;estado_civil&quot;: &quot;Soltero&quot;,
+      &quot;fecha_nacimiento&quot;: &quot;1998-05-12&quot;,
+      &quot;fecha_registro&quot;: &quot;2026-01-11T16:40:40.570Z&quot;,
+      &quot;origen&quot;: &quot;Formulario Web&quot;,
+      &quot;fecha_cliente&quot;: &quot;2026-01-11&quot;,
+      &quot;estado&quot;: &quot;Nuevo&quot;
+    },
+    &quot;carrera&quot;: {
+      &quot;id_carrera&quot;: &quot;5cc61230-5b3b-4f01-a3f7-944cbacfd95b&quot;,
+      &quot;nombre_carrera&quot;: &quot;Administración de Empresas&quot;,
+      &quot;facultad&quot;: &quot;Ciencias Administrativas&quot;,
+      &quot;duracion_semestres&quot;: 8,
+      &quot;nivel_grado&quot;: &quot;Pregrado&quot;,
+      &quot;cupos_disponibles&quot;: 180,
+      &quot;estado&quot;: &quot;1&quot;
+    },
+    &quot;periodo_academico&quot;: &quot;2025-1&quot;,
+    &quot;fecha_postulacion&quot;: &quot;2026-01-11&quot;,
+    &quot;estado_postulacion&quot;: &quot;Pendiente&quot;,
+    &quot;observaciones&quot;: &quot;Documentos incompletos&quot;
+  },
+  &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+  &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+  &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+  &quot;estado_documento&quot;: &quot;En revisión&quot;,
+  &quot;observaciones&quot;: &quot;Documento legible, pendiente de validación institucional&quot;,
+  &quot;created_at&quot;: &quot;2026-01-11T17:18:08.967Z&quot;,
+  &quot;updated_at&quot;: &quot;2026-01-11T17:18:08.967Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:38]</span>
+                <span class="scenario-name">PUT - Actualizar documento postulacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>30</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def documentosPath = &#39;/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/documentos-postulacion/e29b23b7-5005-464e-a49d-797a722f5d09&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.40">{
+  &quot;id_postulacion&quot;: &quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,
+&quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+&quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+&quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+&quot;estado_documento&quot;: &quot;Validado&quot;,
+&quot;observaciones&quot;: &quot;Validación completada pasar siguiente etapa&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">23:07:47.876 request:
+1 &gt; PUT http://localhost:3000/documentos-postulacion/e29b23b7-5005-464e-a49d-797a722f5d09
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 331
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id_postulacion&quot;:&quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;,&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https:\/\/mi-servidor.com\/documentos\/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;Validado&quot;,&quot;observaciones&quot;:&quot;Validación completada pasar siguiente etapa&quot;}
+
+23:07:47.897 response time in milliseconds: 20
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 477
+1 &lt; ETag: W/&quot;1dd-KXXPkFVDz6BjVUEkiksLmN4eIDI&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:07:47 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;id_documento&quot;:&quot;e29b23b7-5005-464e-a49d-797a722f5d09&quot;,&quot;postulacion&quot;:{&quot;id_postulacion&quot;:&quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;},&quot;tipo_documento&quot;:&quot;Certificado de estudios&quot;,&quot;nombre_archivo&quot;:&quot;certificado_estudios_marcos.pdf&quot;,&quot;url_archivo&quot;:&quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,&quot;estado_documento&quot;:&quot;Validado&quot;,&quot;observaciones&quot;:&quot;Validación completada pasar siguiente etapa&quot;,&quot;created_at&quot;:&quot;2026-01-11T17:18:08.967Z&quot;,&quot;updated_at&quot;:&quot;2026-01-16T04:07:47.888Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">23:07:47.899 [print] {
+  &quot;id_documento&quot;: &quot;e29b23b7-5005-464e-a49d-797a722f5d09&quot;,
+  &quot;postulacion&quot;: {
+    &quot;id_postulacion&quot;: &quot;e8cb8908-1be9-4ef1-ae20-4c4ccc805e34&quot;
+  },
+  &quot;tipo_documento&quot;: &quot;Certificado de estudios&quot;,
+  &quot;nombre_archivo&quot;: &quot;certificado_estudios_marcos.pdf&quot;,
+  &quot;url_archivo&quot;: &quot;https://mi-servidor.com/documentos/certificado_estudios_marcos.pdf&quot;,
+  &quot;estado_documento&quot;: &quot;Validado&quot;,
+  &quot;observaciones&quot;: &quot;Validación completada pasar siguiente etapa&quot;,
+  &quot;created_at&quot;: &quot;2026-01-11T17:18:08.967Z&quot;,
+  &quot;updated_at&quot;: &quot;2026-01-16T04:07:47.888Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:55]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:55]</span>
+                <span class="scenario-name">DELETE - Eliminar documento postulacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>26</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:55]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def documentosPath = &#39;/documentos-postulacion&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/documentos-postulacion/98c922ea-e591-4587-92c4-518373d882c5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.57">23:07:47.917 request:
+1 &gt; DELETE http://localhost:3000/documentos-postulacion/98c922ea-e591-4587-92c4-518373d882c5
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:07:47.934 response time in milliseconds: 16
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 47
+1 &lt; ETag: W/&quot;2f-xLenb9lNG+eWXOAn94T+QU6KRLI&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:07:47 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;message&quot;:&quot;Documento eliminado correctamente&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">23:07:47.939 [print] {
+  &quot;message&quot;: &quot;Documento eliminado correctamente&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"8d82206c-c834-41b0-8f25-b901b3855686",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>auditoria</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-15 11:16:10 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>POST - Crear auditoria</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:27]"><span>[2:27]</span> <span>GET - Listar auditorias</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:33]"><span>[3:33]</span> <span>GET by id - Obtener auditoria</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">auditoria.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Auditoria - Registro de acciones</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">POST - Crear auditoria</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>904</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auditoriaPath = &#39;/auditoria&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/auditoria&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">78</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.9">{
+  &quot;usuario&quot;: &quot;coordinador_carreras&quot;,
+  &quot;modulo&quot;: &quot;Carreras&quot;,
+  &quot;accion&quot;: &quot;DELETE&quot;,
+  &quot;tabla_afectada&quot;: &quot;carreras&quot;,
+  &quot;id_registro_afectado&quot;: &quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,
+  &quot;descripcion_cambio&quot;: &quot;Eliminación de carrera académica inactiva&quot;,
+  &quot;ip_usuario&quot;: &quot;192.168.1.89&quot;,
+  &quot;terminal&quot;: &quot;PC-COORD-UTE-01&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">589</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">23:16:10.549 request:
+1 &gt; POST http://localhost:3000/auditoria
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 286
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;usuario&quot;:&quot;coordinador_carreras&quot;,&quot;modulo&quot;:&quot;Carreras&quot;,&quot;accion&quot;:&quot;DELETE&quot;,&quot;tabla_afectada&quot;:&quot;carreras&quot;,&quot;id_registro_afectado&quot;:&quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,&quot;descripcion_cambio&quot;:&quot;Eliminación de carrera académica inactiva&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.89&quot;,&quot;terminal&quot;:&quot;PC-COORD-UTE-01&quot;}
+
+23:16:10.603 response time in milliseconds: 50
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 434
+1 &lt; ETag: W/&quot;1b2-RIeZwollqi2e3GktILYOKhJYA/k&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:16:10 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Auditoría creada con éxito&quot;,&quot;data&quot;:{&quot;usuario&quot;:&quot;coordinador_carreras&quot;,&quot;modulo&quot;:&quot;Carreras&quot;,&quot;accion&quot;:&quot;DELETE&quot;,&quot;tabla_afectada&quot;:&quot;carreras&quot;,&quot;id_registro_afectado&quot;:&quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,&quot;descripcion_cambio&quot;:&quot;Eliminación de carrera académica inactiva&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:16:10.584Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.89&quot;,&quot;terminal&quot;:&quot;PC-COORD-UTE-01&quot;,&quot;_id&quot;:&quot;6969bb8a8f0f6d66217464b7&quot;,&quot;__v&quot;:0}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">110</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">23:16:10.716 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Auditoría creada con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;usuario&quot;: &quot;coordinador_carreras&quot;,
+    &quot;modulo&quot;: &quot;Carreras&quot;,
+    &quot;accion&quot;: &quot;DELETE&quot;,
+    &quot;tabla_afectada&quot;: &quot;carreras&quot;,
+    &quot;id_registro_afectado&quot;: &quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,
+    &quot;descripcion_cambio&quot;: &quot;Eliminación de carrera académica inactiva&quot;,
+    &quot;fecha_accion&quot;: &quot;2026-01-16T04:16:10.584Z&quot;,
+    &quot;ip_usuario&quot;: &quot;192.168.1.89&quot;,
+    &quot;terminal&quot;: &quot;PC-COORD-UTE-01&quot;,
+    &quot;_id&quot;: &quot;6969bb8a8f0f6d66217464b7&quot;,
+    &quot;__v&quot;: 0
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auditoriaId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:27]</span>
+                <span class="scenario-name">GET - Listar auditorias</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>21</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auditoriaPath = &#39;/auditoria&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/auditoria&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">23:16:10.757 request:
+1 &gt; GET http://localhost:3000/auditoria
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:16:10.767 response time in milliseconds: 9
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1962
+1 &lt; ETag: W/&quot;7aa-uqepoEYz33GL5bc3G5woXuMQBwA&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:16:10 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Auditorías obtenidas con éxito&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;6969bb8a8f0f6d66217464b7&quot;,&quot;usuario&quot;:&quot;coordinador_carreras&quot;,&quot;modulo&quot;:&quot;Carreras&quot;,&quot;accion&quot;:&quot;DELETE&quot;,&quot;tabla_afectada&quot;:&quot;carreras&quot;,&quot;id_registro_afectado&quot;:&quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,&quot;descripcion_cambio&quot;:&quot;Eliminación de carrera académica inactiva&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:16:10.584Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.89&quot;,&quot;terminal&quot;:&quot;PC-COORD-UTE-01&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6969ba1d8f0f6d66217464b3&quot;,&quot;usuario&quot;:&quot;coordinador_carreras&quot;,&quot;modulo&quot;:&quot;Carreras&quot;,&quot;accion&quot;:&quot;DELETE&quot;,&quot;tabla_afectada&quot;:&quot;carreras&quot;,&quot;id_registro_afectado&quot;:&quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,&quot;descripcion_cambio&quot;:&quot;Eliminación de carrera académica inactiva&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:10:05.877Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.89&quot;,&quot;terminal&quot;:&quot;PC-COORD-UTE-01&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6969ba168f0f6d66217464b1&quot;,&quot;usuario&quot;:&quot;analista_academico&quot;,&quot;modulo&quot;:&quot;Documentos Postulación&quot;,&quot;accion&quot;:&quot;INSERT&quot;,&quot;tabla_afectada&quot;:&quot;documentos_postulacion&quot;,&quot;id_registro_afectado&quot;:&quot;f1a2b3c4-9d8e-7f65-4a32-bcde12345678&quot;,&quot;descripcion_cambio&quot;:&quot;Registro de certificado de estudios del postulante&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:09:58.051Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.62&quot;,&quot;terminal&quot;:&quot;PC-ACA-UTE-02&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6969ba028f0f6d66217464af&quot;,&quot;usuario&quot;:&quot;operador_rrhh&quot;,&quot;modulo&quot;:&quot;Postulaciones&quot;,&quot;accion&quot;:&quot;UPDATE&quot;,&quot;tabla_afectada&quot;:&quot;postulaciones&quot;,&quot;id_registro_afectado&quot;:&quot;a3b1c9e4-7f62-4b8a-9c21-1d5f4e8a2b90&quot;,&quot;descripcion_cambio&quot;:&quot;Actualización del estado de la postulación a Aprobada&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:09:38.940Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.47&quot;,&quot;terminal&quot;:&quot;PC-ADM-UTE-03&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6969b9ed8f0f6d66217464ad&quot;,&quot;usuario&quot;:&quot;admin_sistema&quot;,&quot;modulo&quot;:&quot;Usuarios&quot;,&quot;accion&quot;:&quot;INSERT&quot;,&quot;tabla_afectada&quot;:&quot;usuarios&quot;,&quot;id_registro_afectado&quot;:&quot;c7f9df72-3c6d-42bb-be07-bb9a7d44df71&quot;,&quot;descripcion_cambio&quot;:&quot;Creación de un usuario administrador del sistema&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:09:17.012Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.25&quot;,&quot;terminal&quot;:&quot;PC-LAB-UTE-01&quot;,&quot;__v&quot;:0}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">23:16:10.772 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Auditorías obtenidas con éxito&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;_id&quot;: &quot;6969bb8a8f0f6d66217464b7&quot;,
+      &quot;usuario&quot;: &quot;coordinador_carreras&quot;,
+      &quot;modulo&quot;: &quot;Carreras&quot;,
+      &quot;accion&quot;: &quot;DELETE&quot;,
+      &quot;tabla_afectada&quot;: &quot;carreras&quot;,
+      &quot;id_registro_afectado&quot;: &quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,
+      &quot;descripcion_cambio&quot;: &quot;Eliminación de carrera académica inactiva&quot;,
+      &quot;fecha_accion&quot;: &quot;2026-01-16T04:16:10.584Z&quot;,
+      &quot;ip_usuario&quot;: &quot;192.168.1.89&quot;,
+      &quot;terminal&quot;: &quot;PC-COORD-UTE-01&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;6969ba1d8f0f6d66217464b3&quot;,
+      &quot;usuario&quot;: &quot;coordinador_carreras&quot;,
+      &quot;modulo&quot;: &quot;Carreras&quot;,
+      &quot;accion&quot;: &quot;DELETE&quot;,
+      &quot;tabla_afectada&quot;: &quot;carreras&quot;,
+      &quot;id_registro_afectado&quot;: &quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,
+      &quot;descripcion_cambio&quot;: &quot;Eliminación de carrera académica inactiva&quot;,
+      &quot;fecha_accion&quot;: &quot;2026-01-16T04:10:05.877Z&quot;,
+      &quot;ip_usuario&quot;: &quot;192.168.1.89&quot;,
+      &quot;terminal&quot;: &quot;PC-COORD-UTE-01&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;6969ba168f0f6d66217464b1&quot;,
+      &quot;usuario&quot;: &quot;analista_academico&quot;,
+      &quot;modulo&quot;: &quot;Documentos Postulación&quot;,
+      &quot;accion&quot;: &quot;INSERT&quot;,
+      &quot;tabla_afectada&quot;: &quot;documentos_postulacion&quot;,
+      &quot;id_registro_afectado&quot;: &quot;f1a2b3c4-9d8e-7f65-4a32-bcde12345678&quot;,
+      &quot;descripcion_cambio&quot;: &quot;Registro de certificado de estudios del postulante&quot;,
+      &quot;fecha_accion&quot;: &quot;2026-01-16T04:09:58.051Z&quot;,
+      &quot;ip_usuario&quot;: &quot;192.168.1.62&quot;,
+      &quot;terminal&quot;: &quot;PC-ACA-UTE-02&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;6969ba028f0f6d66217464af&quot;,
+      &quot;usuario&quot;: &quot;operador_rrhh&quot;,
+      &quot;modulo&quot;: &quot;Postulaciones&quot;,
+      &quot;accion&quot;: &quot;UPDATE&quot;,
+      &quot;tabla_afectada&quot;: &quot;postulaciones&quot;,
+      &quot;id_registro_afectado&quot;: &quot;a3b1c9e4-7f62-4b8a-9c21-1d5f4e8a2b90&quot;,
+      &quot;descripcion_cambio&quot;: &quot;Actualización del estado de la postulación a Aprobada&quot;,
+      &quot;fecha_accion&quot;: &quot;2026-01-16T04:09:38.940Z&quot;,
+      &quot;ip_usuario&quot;: &quot;192.168.1.47&quot;,
+      &quot;terminal&quot;: &quot;PC-ADM-UTE-03&quot;,
+      &quot;__v&quot;: 0
+    },
+    {
+      &quot;_id&quot;: &quot;6969b9ed8f0f6d66217464ad&quot;,
+      &quot;usuario&quot;: &quot;admin_sistema&quot;,
+      &quot;modulo&quot;: &quot;Usuarios&quot;,
+      &quot;accion&quot;: &quot;INSERT&quot;,
+      &quot;tabla_afectada&quot;: &quot;usuarios&quot;,
+      &quot;id_registro_afectado&quot;: &quot;c7f9df72-3c6d-42bb-be07-bb9a7d44df71&quot;,
+      &quot;descripcion_cambio&quot;: &quot;Creación de un usuario administrador del sistema&quot;,
+      &quot;fecha_accion&quot;: &quot;2026-01-16T04:09:17.012Z&quot;,
+      &quot;ip_usuario&quot;: &quot;192.168.1.25&quot;,
+      &quot;terminal&quot;: &quot;PC-LAB-UTE-01&quot;,
+      &quot;__v&quot;: 0
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:33]</span>
+                <span class="scenario-name">GET by id - Obtener auditoria</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>45</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &#39;http://localhost:3000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auditoriaPath = &#39;/auditoria&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/auditoria/6969ba1d8f0f6d66217464b3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">23:16:10.792 request:
+1 &gt; GET http://localhost:3000/auditoria/6969ba1d8f0f6d66217464b3
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:16:10.828 response time in milliseconds: 35
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 436
+1 &lt; ETag: W/&quot;1b4-h143bnKvEqq1rWfpQGB/OxJQepU&quot;
+1 &lt; Date: Fri, 16 Jan 2026 04:16:10 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Auditoría obtenida con éxito&quot;,&quot;data&quot;:{&quot;_id&quot;:&quot;6969ba1d8f0f6d66217464b3&quot;,&quot;usuario&quot;:&quot;coordinador_carreras&quot;,&quot;modulo&quot;:&quot;Carreras&quot;,&quot;accion&quot;:&quot;DELETE&quot;,&quot;tabla_afectada&quot;:&quot;carreras&quot;,&quot;id_registro_afectado&quot;:&quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,&quot;descripcion_cambio&quot;:&quot;Eliminación de carrera académica inactiva&quot;,&quot;fecha_accion&quot;:&quot;2026-01-16T04:10:05.877Z&quot;,&quot;ip_usuario&quot;:&quot;192.168.1.89&quot;,&quot;terminal&quot;:&quot;PC-COORD-UTE-01&quot;,&quot;__v&quot;:0}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">23:16:10.832 [print] {
+  &quot;success&quot;: true,
+  &quot;message&quot;: &quot;Auditoría obtenida con éxito&quot;,
+  &quot;data&quot;: {
+    &quot;_id&quot;: &quot;6969ba1d8f0f6d66217464b3&quot;,
+    &quot;usuario&quot;: &quot;coordinador_carreras&quot;,
+    &quot;modulo&quot;: &quot;Carreras&quot;,
+    &quot;accion&quot;: &quot;DELETE&quot;,
+    &quot;tabla_afectada&quot;: &quot;carreras&quot;,
+    &quot;id_registro_afectado&quot;: &quot;9e8d7c6b-5a4f-3210-bcde-abcdef123456&quot;,
+    &quot;descripcion_cambio&quot;: &quot;Eliminación de carrera académica inactiva&quot;,
+    &quot;fecha_accion&quot;: &quot;2026-01-16T04:10:05.877Z&quot;,
+    &quot;ip_usuario&quot;: &quot;192.168.1.89&quot;,
+    &quot;terminal&quot;: &quot;PC-COORD-UTE-01&quot;,
+    &quot;__v&quot;: 0
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
